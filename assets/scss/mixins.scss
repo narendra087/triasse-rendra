@@ -1,0 +1,21 @@
+@mixin mix-btn($color, $text) {
+  background-color: $color;
+  border: none;
+  color: $text;
+  &:not(:disabled) {
+    &:hover, &:active, &:focus {
+      border: none;
+      background-color: $color;
+      color: $text;
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+  }
+}
+
+@mixin font-regular {
+  font-weight: 400;
+}
+
+@mixin font-bold {
+  font-weight: 700;
+}

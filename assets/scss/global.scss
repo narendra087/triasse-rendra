@@ -1,0 +1,41 @@
+a, a:hover {
+  text-decoration: unset;
+  color: #000;
+}
+
+p, label {
+  margin: 0;
+}
+
+body {
+  font-family: Open Sans,sans-serif;
+}
+
+button {
+  padding: 0 15px;
+  border-radius: 10px;
+  height: 40px;
+  &.btn-primary {
+    @include mix-btn($clr-primary, $clr-white)
+  }
+  &.btn-secondary {
+    @include mix-btn($clr-secondary, $clr-primary)
+  }
+}
+
+.main-container {
+  padding: 0 65px;
+}
+.full-container {
+  margin: 0 -65px;
+  padding: 0 65px;
+}
+.secondary-container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.secondary-container-margin {
+  margin-left: 80px;
+  margin-right: 80px;
+}
