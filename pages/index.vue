@@ -1,5 +1,6 @@
 <template>
   <div class="pg-homepage">
+    <ContactHeader />
     <BaseHeader />
     <div class="wrapper-content main-container">
       <div class="homepage-banner">
@@ -19,58 +20,84 @@
             </div>
           </div>
         </div>
-        <div class="homepage-section section-two full-container">
+        <div class="homepage-section section-two bgn-secondary full-container py-5">
           <div class="secondary-container">
-            <p class="section-title">Mengapa harus Triasse?</p>
-            <p class="section-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <div class="section-content row">
-              <div class="col-6 big-content">
-                <div class="content-img big-img"></div>
+            <p class="section-title text-center">Mengapa harus Triasse?</p>
+            <p class="section-subtitle text-center">Proin egestas eu dui in vestibulum. Suspendisse sit amet sem non nunc tempor tincidunt.</p>
+            <AboutTriasse />
+          </div>
+        </div>
+        <div class="homepage-section section-three py-5">
+          <p class="section-title text-center">Lorem ipsum dolor sit amet</p>
+          <p class="section-subtitle text-center">Proin egestas eu dui in vestibulum. Suspendisse sit amet sem non nunc tempor tincidunt.</p>
+          <PromotionList />
+        </div>
+        <div class="homepage-section section-four bgn-secondary full-container py-5">
+          <div class="secondary-container">
+            <p class="section-title text-center">Mitra Laboratorium Terbaik di Indonesia</p>
+            <p class="section-subtitle text-center">Triasse tersedia di 44 cabang seluruh Indonesia, dengan sebaran di 16 kota besar yang bisa dipesan secara <i>online</i>.</p>
+            <MitraList />
+          </div>
+        </div>
+        <div class="homepage-section section-five py-5">
+          <p class="section-title text-center">Lorem ipsum dolor sit amet</p>
+          <p class="section-subtitle text-center">Proin egestas eu dui in vestibulum. Suspendisse sit amet sem non nunc tempor tincidunt.</p>
+          <ArticleList />
+        </div>
+        <div class="homepage-section section-six py-5">
+          <div class="secondary-container">
+            <p class="section-title text-center">Media Coverage</p>
+            <MediaList />
+          </div>
+        </div>
+        <div class="homepage-section section-seven py-5">
+          <hr>
+          <div class="secondary-container">
+            <div class="section-content pt-5">
+              <div class="content-item">
+                <p class="content-title">Toko Furniture Online Terpercaya di Indonesia</p>
+                <p class="content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima non sit excepturi quibusdam odio iste fuga distinctio, eum, officia sint dolorum eaque nam harum, deserunt libero quam dolores maxime?</p>
               </div>
-              <div class="col-6 small-content">
-                <div class="content-item">
-                  <div class="content-img small-img"></div>
-                  <div class="content-info">
-                    <p class="content-title">Jaminan harga terbaik</p>
-                    <p class="content-desc">Harga kompetitif di Laboratorium terbesar dan terpercaya di Indonesia seperti Prodia, Kimia Farma, Parahita,GS Lab & Biotest.</p>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <div class="content-img small-img"></div>
-                  <div class="content-info">
-                    <p class="content-title">Layanan home service</p>
-                    <p class="content-desc">Pemeriksaan bisa dilakukan dari rumah sendiri dengan layanan Home Service, petugas datang untuk melakukan pengecekan dan tes.</p>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <div class="content-img small-img"></div>
-                  <div class="content-info">
-                    <p class="content-title">Cicilan 4x dengan bunga 0%</p>
-                    <p class="content-desc">Pembayaran paket pemeriksaan lebih ringan karena bisa dicicil sebanyak empat kali, dan tanpa bunga tambahan</p>
-                  </div>
-                </div>
-                <div class="content-item">
-                  <div class="content-img small-img"></div>
-                  <div class="content-info">
-                    <p class="content-title">Pesan dan hasil online</p>
-                    <p class="content-desc">Pesan dan hasil pemeriksaan bisa dilakukan secara online, proses lebih cepat tanpa perlu antri di lab.</p>
-                  </div>
-                </div>
+              <div class="content-item">
+                <p class="content-title">Belanja Mebel Custom Terlengkap di Bramble Furniture</p>
+                <p class="content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima non sit excepturi quibusdam odio iste fuga distinctio, eum, officia sint dolorum eaque nam harum, deserunt libero quam dolores maxime?</p>
+              </div>
+              <div class="content-item">
+                <p class="content-title">Situs Jual Beli Furniture Custom Terbaik di Indonesia</p>
+                <p class="content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima non sit excepturi quibusdam odio iste fuga distinctio, eum, officia sint dolorum eaque nam harum, deserunt libero quam dolores maxime?</p>
+              </div>
+              <div class="content-item">
+                <p class="content-title">Online Store dengan Produk Furniture Berkualitas Premium</p>
+                <p class="content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima non sit excepturi quibusdam odio iste fuga distinctio, eum, officia sint dolorum eaque nam harum, deserunt libero quam dolores maxime?</p>
+              </div>
+              <div class="content-item">
+                <p class="content-title">Gratis Ongkir Furniture Seluruh Jabodetabek</p>
+                <p class="content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima non sit excepturi quibusdam odio iste fuga distinctio, eum, officia sint dolorum eaque nam harum, deserunt libero quam dolores maxime?</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="homepage-section section-three"></div>
-        <div class="homepage-section section-four"></div>
-        <div class="homepage-section section-fifth"></div>
       </div>
+      <BaseFooter />
     </div>
-  </div>
 </template>
 
 <script>
+import AboutTriasse from '@/components/Home/AboutTriasse.vue'
+import PromotionList from '@/components/Home/PromotionList.vue'
+import MitraList from '@/components/Home/MitraList.vue'
+import ArticleList from '@/components/Home/ArticleList.vue'
+import MediaList from '@/components/Home/MediaList.vue'
+
 export default {
-  name: 'Homepage'
+  name: 'Homepage',
+  components: {
+    AboutTriasse,
+    PromotionList,
+    MitraList,
+    ArticleList,
+    MediaList,
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -89,11 +116,14 @@ export default {
         font-size: 26px;
       }
       .section-subtitle {
-        font-size: 14px;
+        margin-top: 10px;
+      }
+      hr {
+        border-color: #000;
       }
       &.section-one {
         .form-wrapper {
-          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
           border-radius: 10px;
           position: relative;
           bottom: 45px;
@@ -110,40 +140,16 @@ export default {
           }
         }
       }
-      &.section-two {
-        background: $clr-secondary;
-        p {
-          text-align: center;
-        }
+      &.section-seven {
         .section-content {
-          padding-top: 60px;
-          .content-img {
-            background: $clr-placeholder;
-            border-radius: 10px;
-            width: 100%;
-            height: 100%;
-            &.small-img {
-              min-width: 80px;
-              width: 80px;
-              height: 80px;
-            }
+          display: grid;
+          gap: 20px;
+          .content-title {
+            @include font-bold;
+            margin-bottom: 5px;
           }
-          .small-content {
-            display: grid;
-            gap: 20px;
-            .content-item {
-              display: flex;
-              .content-info {
-                margin-left: 20px;
-                p {
-                  text-align: left;
-                  &.content-title {
-                    @include font-bold;
-                    margin-bottom: 5px;
-                  }
-                }
-              }
-            }
+          .content-desc {
+            color: $clr-90;
           }
         }
       }

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "img-stethoscope-basic.png",
+    "title": "Paket Medical Check-up Basic",
+    "price": "Rp416.000",
+    "discount_price": "Rp364.001"
+  },
+  {
+    "id": 2,
+    "image": "img-stethoscope-silver.png",
+    "title": "Paket Medical Check-up Silver",
+    "price": "Rp600.000",
+    "discount_price": "Rp573.000"
+  },
+  {
+    "id": 3,
+    "image": "img-stethoscope-gold.png",
+    "title": "Paket Medical Check-up Gold",
+    "price": "Rp1.288.000",
+    "discount_price": "Rp1.127.000"
+  },
+  {
+    "id": 4,
+    "image": "img-example-1.png",
+    "title": "Paket Skrining Diabetes Melitus",
+    "price": "Rp261.625",
+    "discount_price": "Rp249.375"
+  },
+  {
+    "id": 5,
+    "image": "img-heart-attack.png",
+    "title": "Paket Risiko Penyakit Jantung",
+    "price": "Rp1.162.000",
+    "discount_price": "Rp1.016.750"
+  },
+  {
+    "id": 6,
+    "image": "img-example-3.png",
+    "title": "Paket TORCH",
+    "price": "Rp2.480.000",
+    "discount_price": "Rp2.417.000"
+  }
+]

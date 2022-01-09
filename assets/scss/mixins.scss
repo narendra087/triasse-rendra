@@ -12,6 +12,13 @@
   }
 }
 
+@mixin webkit-box ($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @mixin font-regular {
   font-weight: 400;
 }
