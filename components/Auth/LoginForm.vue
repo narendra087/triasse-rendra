@@ -1,7 +1,7 @@
 <template>
   <div class="auth-form login-form">
     <div class="row justify-content-center">
-      <div class="card-form col-lg-5">
+      <div class="card-form col-lg-5 col-sm-8 col-11">
         <div class="form-header mb-3">
           <p class="form-title">Masuk</p>
           <p class="form-subtitle">Belum punya akun? <span @click="$router.push('/register')">Daftar</span></p>

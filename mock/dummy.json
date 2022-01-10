@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "image": "img-search-post-1.png",
+    "title": "Parahita Buncit",
+    "address": "Jalan Warung Buncit Raya 150 Jakarta Selatan",
+    "rating": "4.8",
+    "price": "250.578",
+    "actual_price": "370.500",
+    "discount": "20",
+    "info": ["Tidak bisa reschedule", "Tidak bisa refund"],
+    "type": [
+      {"id": "lab", "name": "Datang ke Lab"},
+      {"id": "home", "name": "Home Service"}
+    ]
+  },
+  {
+    "id": 2,
+    "image": "img-search-post-1.png",
+    "title": "Parahita Buncit",
+    "address": "Jalan Warung Buncit Raya 150 Jakarta Selatan",
+    "rating": "4.8",
+    "price": "250.578",
+    "actual_price": "370.500",
+    "discount": "20",
+    "info": ["Tidak bisa reschedule", "Tidak bisa refund"],
+    "type": [
+      {"id": "lab", "name": "Datang ke Lab"},
+      {"id": "home", "name": "Home Service"}
+    ]
+  },
+  {
+    "id": 3,
+    "image": "img-search-post-1.png",
+    "title": "Parahita Buncit",
+    "address": "Jalan Warung Buncit Raya 150 Jakarta Selatan",
+    "rating": "4.8",
+    "price": "250.578",
+    "actual_price": "370.500",
+    "discount": "20",
+    "info": ["Tidak bisa reschedule", "Tidak bisa refund"],
+    "type": [
+      {"id": "lab", "name": "Datang ke Lab"},
+      {"id": "home", "name": "Home Service"}
+    ]
+  },
+  {
+    "id": 4,
+    "image": "img-search-post-1.png",
+    "title": "Parahita Buncit",
+    "address": "Jalan Warung Buncit Raya 150 Jakarta Selatan",
+    "rating": "4.8",
+    "price": "250.578",
+    "actual_price": "370.500",
+    "discount": "20",
+    "info": ["Tidak bisa reschedule", "Tidak bisa refund"],
+    "type": [
+      {"id": "lab", "name": "Datang ke Lab"},
+      {"id": "home", "name": "Home Service"}
+    ]
+  },
+  {
+    "id": 5,
+    "image": "img-search-post-1.png",
+    "title": "Parahita Buncit",
+    "address": "Jalan Warung Buncit Raya 150 Jakarta Selatan",
+    "rating": "4.8",
+    "price": "250.578",
+    "actual_price": "370.500",
+    "discount": "20",
+    "info": ["Tidak bisa reschedule", "Tidak bisa refund"],
+    "type": [
+      {"id": "lab", "name": "Datang ke Lab"},
+      {"id": "home", "name": "Home Service"}
+    ]
+  }
+]

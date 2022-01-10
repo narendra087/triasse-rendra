@@ -30,5 +30,8 @@ export default {
     // grid-template-columns: repeat((auto-fill, minmax(250px, 1fr)));
     grid-template-columns: repeat((4, 1fr));
     gap: 20px;
+    @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+      grid-template-columns: unset;
+    }
   }
 </style>

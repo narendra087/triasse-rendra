@@ -16,13 +16,20 @@ const actions = {
       image: 'img-icon-user.svg',
     }
     commit("setUser", tempData);
-  }
+  },
+  logoutUser({ commit }) {
+    commit("clearUser");
+  },
 }
 
 const mutations = {
   setUser: (state, data) => {
     state.user = data
     state.isLoggedIn = true;
+  },
+  clearUser: (state) => {
+    state.user = null
+    state.isLoggedIn = false;
   },
 }
 

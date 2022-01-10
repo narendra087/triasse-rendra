@@ -3,7 +3,7 @@
     <div class="col-6 big-content">
       <div class="content-img big-img"></div>
     </div>
-    <div class="col-6 small-content">
+    <div class="col-md-6 small-content">
       <div class="content-item">
         <div class="content-img small-img"></div>
         <div class="content-info">
@@ -53,22 +53,59 @@ export default {
         min-width: 100px;
         width: 100px;
         height: 100px;
+        @media screen and (min-width: $tablet-end) and (max-width: $tablet) {
+          min-width: 50px;
+          width: 50px;
+          height: 50px;
+        }
+        @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+          min-width: 50px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    .big-content {
+      @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+        display: none;
       }
     }
     .small-content {
       display: grid;
       gap: 20px;
+      @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
       .content-item {
         display: flex;
         .content-info {
           margin-left: 20px;
+          @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+            margin-left: 10px;
+          }
           p {
             &.content-title {
               @include font-bold;
               margin-bottom: 5px;
+              @media screen and (min-width: $tablet-end) and (max-width: $tablet) {
+                font-size: 14px;
+              }
+              @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+                font-size: 14px;
+                @include webkit-box(2);
+              }
             }
             &.content-desc {
               @include webkit-box(3);
+              @media screen and (min-width: $tablet-end) and (max-width: $tablet) {
+                @include webkit-box(2);
+                font-size: 14px;
+              }
+              @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+                font-size: 14px;
+                @include webkit-box(2);
+              }
             }
           }
         }

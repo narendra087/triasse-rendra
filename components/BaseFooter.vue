@@ -1,13 +1,13 @@
 <template>
   <div class="footer-section">
     <Newsletter />
-    <div class="footer-container main-container py-5">
+    <div class="footer-container main-container py-sm-5 py-3">
       <div class="row">
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-md-12 mb-xl-0 mb-4">
           <img class="footer-image mb-3" src="@/assets/img/img-brand-logo-white@3x.png" alt="brand-white">
           <p class="footer-desc">Platform pertama untuk tes laboratorium dan pemeriksaan kesehatan di Indonesia yang memberikan pelanggan kemampuan untuk membuat keputusan yang lebih baik bagi kesehatan mereka.</p>
         </div>
-        <div class="col-xl-2">
+        <div class="col-xl-2 col-6 mb-md-4">
           <p class="footer-title mb-3">Lainnya</p>
           <ul>
             <li>
@@ -27,7 +27,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-xl-2">
+        <div class="col-xl-2 col-6 mb-xl-0 mb-4">
           <p class="footer-title mb-3">Hubungi Kami</p>
           <ul>
             <li>
@@ -47,11 +47,11 @@
             </li>
           </ul>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-12 mb-xl-0 mb-4">
           <p class="footer-title mb-3">Alamat</p>
           <p class="footer-address">Gedung Perkantoran Madison Park, Lantai 6 Unit B. No. 02. Jl. Letjen S. Parman Kav 28, Jakarta 11470</p>
         </div>
-        <div class="col-xl-2">
+        <div class="col-xl-2 col-12">
           <p class="footer-title mb-2">Media Sosial</p>
           <div class="social-wrapper">
             <div class="social-item">
@@ -121,9 +121,19 @@ export default {
     .social-wrapper {
       display: grid;
       gap: 10px;
+      @media screen and (min-width: $mobile-end) and (max-width: $tablet) {
+        display: flex;
+        align-items: center;
+        gap: unset;
+      }
       .social-item {
         display: flex;
         align-items: center;
+        @media screen and (min-width: $mobile-end) and (max-width: $tablet) {
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+        }
         a {
           &:not(:last-child) {
             margin-right: 10px;
@@ -137,6 +147,9 @@ export default {
       background: $clr-primary-dark;
       color: $clr-white;
       font-size: 14px;
+      @media screen and (min-width: $mobile-end) and (max-width: $tablet) {
+        font-size: 12px;
+      }
     }
   }
 </style>

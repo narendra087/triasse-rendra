@@ -13,6 +13,11 @@ import RegisterForm from '@/components/Auth/RegisterForm.vue'
 
 export default {
   name: "LoginRegisterPage",
+  head() {
+    return {
+      title: `${this.$route.name === 'login' ? 'Masuk' : 'Daftar'} | Triasse`
+    }
+  },
   components: {
     LoginForm,
     RegisterForm,

@@ -41,6 +41,12 @@ export default {
       // grid-template-columns: repeat((auto-fill, minmax(180px, 1fr)));
       grid-template-columns: repeat(6, 1fr);
       gap: 20px;
+      @media screen and (min-width: $tablet-end) and (max-width: $tablet) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     .promo-container {
       img {

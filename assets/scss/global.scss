@@ -15,6 +15,9 @@ input:not([type="radio"]) {
   height: 50px;
   display: block;
   padding: 0 15px;
+  @media screen and (min-width: $mobile-end) and (max-width: $tablet) {
+    height: 40px;
+  }
   &::placeholder {
     color: $clr-90;
   }
@@ -25,9 +28,13 @@ hr {
 }
 
 button {
+  position: relative;
   padding: 0 15px;
-  border-radius: 10px;
-  height: 40px;
+  border-radius: 5px;
+  height: 50px;
+  @media screen and (min-width: $mobile-end) and (max-width: $tablet) {
+    height: 40px;
+  }
   cursor: pointer;
   @include font-bold;
   &.btn-primary {
@@ -46,19 +53,64 @@ button {
     @include mix-btn($clr-white, $clr-black);
     border: 1px solid #909090;
   }
+  &.btn-form {
+    @include mix-btn($clr-white, $clr-black);
+    @include font-regular;
+    border: 1px solid #909090;
+    text-align: left;
+    &.with-icon {
+      padding: 0 45px;
+    }
+    &:not(:disabled) {
+      &:hover, &:active, &:focus {
+        border: 1px solid #909090;
+        background-color: unset;
+        color: unset;
+        box-shadow: unset;
+      }
+    }
+  }
 }
 
 .main-container {
   padding: 0 65px;
+  @media screen and (min-width: $tablet-end) and (max-width: $tablet) {
+    padding: 0 25px;
+  }
+  @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+    padding: 0 15px;
+  }
 }
 .full-container {
   margin: 0 -65px;
   padding: 0 65px;
+  @media screen and (min-width: $tablet-end) and (max-width: $tablet) {
+    margin: 0 -25px;
+    padding: 0 25px;
+  }
+  @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+    margin: 0 -15px;
+    padding: 0 15px;
+  }
 }
 .secondary-container {
   padding-left: 80px;
   padding-right: 80px;
+  @media screen and (min-width: $tablet-end) and (max-width: $tablet) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .bgn-secondary {
   background: $clr-secondary;
+}
+
+.desktop-elm {
+  @media screen and (min-width: $mobile-end) and (max-width: $tablet) {
+    display: none !important;
+  }
 }
