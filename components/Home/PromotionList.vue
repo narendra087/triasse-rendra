@@ -8,11 +8,11 @@
       />
     </div>
     <div class="promo-container pt-5 row">
-      <div class="promo-banner col-6">
+      <div class="promo-banner col-md-6 col-12">
         <img src="@/assets/img/img-banner2-1.jpg" alt="promo-banner-1">
         <!-- <button class="btn-primary-alt">Sikat jon!</button> -->
       </div>
-      <div class="promo-banner col-6">
+      <div class="promo-banner col-md-6 col-12">
         <img src="@/assets/img/img-banner2-2.jpg" alt="promo-banner-2">
         <!-- <button class="btn-primary-alt">Sikat jon!</button> -->
       </div>
@@ -49,6 +49,13 @@ export default {
       }
     }
     .promo-container {
+      .promo-banner {
+        @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+          &:not(:last-child) {
+            margin-bottom: 30px;
+          }
+        }
+      }
       img {
         width: 100%;
       }

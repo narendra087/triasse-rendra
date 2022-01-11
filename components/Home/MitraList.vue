@@ -29,6 +29,10 @@ export default {
     grid-template-columns: repeat(5, 1fr);
     gap: 48px;
     align-items: center;
+    @media screen and (min-width: $mobile-end) and (max-width: $mobile) {
+      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+    }
     .lab-image {
       img {
         width: 100%;
